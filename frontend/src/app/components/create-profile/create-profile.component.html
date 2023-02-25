@@ -1,0 +1,25 @@
+
+<div class = 'row m-0 w-100 well' >
+    <div class = 'col-md-4 offset-4 mt-5' >
+        <h4>Choos Product</h4>
+        <form [formGroup]="form" (submit)="onSubmit()">
+            <div class = 'form-group'>
+              <input (change)="onFileSelect($event)" type="file" />
+            </div>
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "text" placeholder = "Name product" formControlName="name">
+            </div>
+        
+            <div class = 'form-group'>
+                <input class = 'form-control' type = "text" formControlName="price"  placeholder = "Price product" >
+            </div>
+
+            <div  *ngIf="imageData" >
+              <img [src]="imageData" [alt]="form.value.name " width="180px"/>
+            </div>
+
+            <input class= 'btn btn-outline-info' type = "submit" value = "Create product">
+        </form>
+    </div>
+</div>
+

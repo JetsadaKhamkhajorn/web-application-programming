@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-lg bg-gradient text-warning mb-5">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-logo"><img src="../assets/img/Logo.png" alt="" width="160" height="140" style="border-radius:25%"></a>
+    </div>
+    <ul class="nav nav-pills">
+      <li><a routerLinkActive="active" [routerLink]="['']">HOME</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['all']">PRODUCT</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['cre']">ADDPRODUCT</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['contact']">CONTACT</a></li>
+      <li><a routerLinkActive="active" [routerLink]="['login']">LOGIN</a></li>
+      <li><a href="https://www.facebook.com/jetsada.khamkhajorn/"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="https://www.instagram.com/adastej_arm/"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="https://line.me/ti/p/iIjJDj35kt"><i class="fa fa-commenting-o"></i></a></li>
+    </ul>
+
+
+    <ul class="nav nav-pills navbar-right"style = "font-size: 15px;">
+      <i class='fas fa-cart-arrow-down' style='font-size:36px'></i>
+    </ul>
+  </div>
+</nav>
+
+<div class="container text-center">
+  <router-outlet></router-outlet>
+</div>

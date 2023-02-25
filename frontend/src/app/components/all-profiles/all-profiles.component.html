@@ -1,0 +1,31 @@
+
+<h1 style="text-align: center;">Product</h1>
+<div class="section">
+
+  <div class="container ">
+      <div>
+          <div *ngIf="profiles.length">
+           
+              <div *ngFor="let profile of profiles">
+                 
+                  <div class="col-md-2 col-xs-6">
+                      <div class="card">
+                          <div class="product-img">
+                              <img [src]="profile.imagePath" [alt]="profile.name" width="150" height="150" alt="">
+                          </div>
+                          <div class="product-body">
+                            <h3 class="product-name" >{{ profile.name }}</h3>
+                            <h4 class="price" >{{ profile.price }}.00 บาท</h4>
+                            <input type="number"class="price text-center" min="1" max="99" value="1"  >
+                          </div>
+                          <div class="add-to-cart">
+                              <button class="btn btn-primary shop-item-button"><i class="fa fa-shopping-cart"></i> ADD</button>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
